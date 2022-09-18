@@ -1,12 +1,12 @@
 import Spline from "@splinetool/react-spline";
-import Vetri from "./images/vetri.jpg";
+import Sean from "./images/sean.jpg";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { Experience, Projects, SocialLinks } from "./data";
-import { IoLogoGithub, IoMenu } from "react-icons/io5";
+import { IoMenu } from "react-icons/io5";
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
@@ -17,7 +17,7 @@ function App() {
       <div className="flex w-screen min-h-screen flex-col items-center justify-center relative bg-primary pb-20">
         <nav className="w-full px-6 z-50  fixed inset-x-0 top-2 flex justify-center items-center ">
           <div className=" w-full md:w-880 bg-navBar p-4 rounded-2xl flex items-center">
-            <p className="text-lg text-slate-200 font-medium">Vetrivel Ravi</p>
+            <p className="text-lg text-slate-200 font-medium"> Sean Wang </p>
 
             <div className="hidden md:flex items-center gap-6 ml-6 flex-1">
               <a
@@ -45,10 +45,11 @@ function App() {
                 Contact
               </a>
               <a
-                href="#"
+                href="/resume.pdf"
+                download="sean_wang_zhenyu_resume.pdf"
                 className="ml-auto text-base text-textBase font-medium hover:text-slate-100 cursor-pointer border border-textBase px-2 py-1 rounded-xl hover:border-gray-100 duration-100 ease-in"
               >
-                Download
+                Resume
               </a>
             </div>
 
@@ -96,22 +97,34 @@ function App() {
                   Contact
                 </a>
                 <a
-                  href="#"
+                  href="/resume.pdf"
+                  download="sean_wang_zhenyu_resume.pdf"
                   className="text-base text-textBase font-medium hover:text-slate-100 cursor-pointer border border-textBase px-2 py-1 rounded-xl hover:border-gray-100 duration-100 ease-in"
                   onClick={() => setIsActive(false)}
                 >
-                  Download
+                  Resume
                 </a>
               </motion.div>
             )}
           </div>
         </nav>
 
-        <div className="flex flex-col w-screen relative" id="home">
-          <Spline scene="https://prod.spline.design/Scwx1vnrIp1ZDuwf/scene.splinecode" />
-          <div className="absolute bottom-10 w-full flex justify-center items-center">
-            <div className="shadow-md p-4 flex items-center justify-center bg-zinc-900 rounded-3xl ">
-              <p className="text-white">Press and drag to orbit</p>
+        <div className="w-screen min-h-screen max-h-screen relative" id="home">
+          <Spline
+            className="min-h-500 max-h-screen relative"
+            scene="https://prod.spline.design/og3w82p0SiX0Ln9H/scene.splinecode"
+          />
+          <div className="absolute bottom-5 w-full flex justify-center items-center mx-2">
+            <div className=" hover:animate-pulse shadow-md p-4 flex items-center justify-center bg-zinc-900 rounded-3xl mx-2 text-gray-500 hover:text-gray-300">
+              <p className="text-gray-500 hover:text-gray-200 ">
+                Press and drag to orbit
+              </p>
+            </div>
+            <div className=" hover:animate-pulse shadow-md p-4 flex items-center justify-center bg-zinc-900 rounded-3xl mx-2 text-gray-500 hover:text-gray-300">
+              Cmd/Ctrl + scroll to zoom
+            </div>
+            <div className=" hover:animate-pulse shadow-md p-4 flex items-center justify-center bg-zinc-900 rounded-3xl mx-2  text-gray-500 hover:text-gray-300">
+              Cmd/Ctrl + drag to shift
             </div>
           </div>
         </div>
@@ -122,9 +135,9 @@ function App() {
             id="about"
           >
             <div className="w-full h-420 flex items-center justify-center">
-              <div className="w-275 h-340 relative bg-emerald-200 rounded-md">
+              <div className="w-275 h-340 relative bg-indigo-900 rounded-md">
                 <img
-                  src={Vetri}
+                  src={Sean}
                   alt=""
                   className="w-full h-full absolute -right-4 top-4 object-cover rounded-lg drop-shadow-2xl"
                 />
@@ -143,8 +156,15 @@ function App() {
               </p>
 
               <button class="w-full md:w-auto relative mt-6 inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-green-400 to-blue-600 group-hover:from-green-400 group-hover:to-blue-600 hover:text-white dark:text-white focus:ring-4 focus:ring-green-200 dark:focus:ring-green-800 hover:shadow-lg hover:shadow-teal-500/50 hover:dark:shadow-lg hover:dark:shadow-teal-800/80">
-                <span class="w-full md:w-auto relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
-                  Download
+                <span class="w-full md:w-auto relative px-5 py-2.5 transition-all ease-in duration-75 bg-gray-300 dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                  <a
+                    href="/resume.pdf"
+                    download="sean_wang_zhenyu_resume.pdf"
+                    className="text-base text-textBase font-medium hover:text-slate-100 cursor-pointer  px-2 py-1 rounded-xl hover:border-gray-100 duration-100 ease-in"
+                    onClick={() => setIsActive(false)}
+                  >
+                    Resume Download
+                  </a>
                 </span>
               </button>
             </div>
@@ -190,26 +210,26 @@ function App() {
                   key={n.id}
                   className="border border-zinc-800 rounded-md p-2 min-w-[275px] md:max-w-[275px] hover:border-zinc-600 duration-100 ease-in-out"
                 >
-                  <p className="text-lg text-textBase font-medium uppercase">
+                  <p className="text-lg text-gray-300 font-medium">
                     {n.name.length > 25 ? `${n.name.slice(0, 25)}...` : n.name}
                   </p>
 
                   <img
                     src={n.imageSrc}
-                    className="w-full h-full object-cover rounded-md my-4"
+                    className="aspect-video object-cover rounded-md my-4"
                     alt=""
                   />
 
                   <div className="flex flex-1 items-center justify-between">
-                    <p className="text-lg text-gray-300">
+                    <p className="text-lg text-textBase">
                       Technologies
                       <span className="block text-sm text-gray-500">
                         {n.techs}
                       </span>
                     </p>
-                    <a href={n.github}>
+                    <a href={n.link}>
                       <motion.div whileTap={{ scale: 0.5 }}>
-                        <IoLogoGithub className="text-textBase text-3xl cursor-pointer" />
+                        {n.iconSrc}
                       </motion.div>
                     </a>
                   </div>

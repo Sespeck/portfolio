@@ -2,16 +2,19 @@ import {
   IoCodeWorking,
   IoLogoGithub,
   IoLogoYoutube,
-  IoLogoTwitter,
+  IoLogoWechat,
   IoLogoLinkedin,
-  IoLogoWhatsapp,
 } from "react-icons/io5";
+
+import { MdOutlineMailOutline } from "react-icons/md";
+import { FiExternalLink } from "react-icons/fi";
+
 import img1 from "./images/thumb-fooddeliveryapp-reactjs-dec.png";
 import img2 from "./images/thumb-fullstack-socialmedia-app-react-sanity.png";
 import img3 from "./images/thumb-google-map-clone-nextjs-feb22.png";
 import img4 from "./images/thumb-pinterest-clone-reactjs.png";
-import img5 from "./images/thumb-videoblog-firebase-reactjs-feb-22.png";
-import img6 from "./images/thumb-whatsappui-clone-nextjs.png";
+import img5 from "./images/welcome-to-java-island.png";
+import img6 from "./images/java-ood-workbook.png";
 
 export const Experience = [
   {
@@ -67,80 +70,90 @@ export const Projects = [
     name: "Food Delivery UI Mockup",
     imageSrc: img1,
     techs: "React Js, Redux, Material UI",
-    github: "#",
+    link: "#",
+    iconSrc: <IoLogoGithub className="text-textBase text-3xl cursor-pointer" />,
   },
   {
     id: 2,
     name: "Full Stack Social Media App ",
     imageSrc: img2,
     techs: "React Js, Sanity, Tailwind CSS",
-    github: "#",
+    link: "#",
+    iconSrc: <IoLogoGithub className="text-textBase text-3xl cursor-pointer" />,
   },
   {
     id: 3,
     name: "Travel Advisor",
     imageSrc: img3,
     techs: "React Js, Chakra UI, Google API",
-    github: "#",
+    link: "#",
+    iconSrc: <IoLogoGithub className="text-textBase text-3xl cursor-pointer" />,
   },
   {
     id: 4,
     name: "Pintrest UI Clone 2.0 ",
     imageSrc: img4,
     techs: "React Js,  Material UI",
-    github: "#",
+    link: "#",
+    iconSrc: <IoLogoGithub className="text-textBase text-3xl cursor-pointer" />,
   },
   {
     id: 5,
-    name: "Own Video Blog",
+    name: "Java Basics Blog",
     imageSrc: img5,
-    techs: "React Js, Chara UI, Firebase",
-    github: "#",
+    techs: "Java, Blogging, HTML",
+    link: "https://aaaa329m.wixsite.com/javaisland",
+    iconSrc: (
+      <FiExternalLink className="text-textBase text-3xl cursor-pointer" />
+    ),
   },
   {
     id: 6,
-    name: "Whatsapp UI Clone",
+    name: "Java OOD Workbook",
     imageSrc: img6,
-    techs: "NextJs, Firebase Auth",
-    github: "#",
+    techs: "Java, Blogging, HTML",
+    link: "https://aaaa329m.wixsite.com/workbook",
+    iconSrc: (
+      <FiExternalLink className="text-textBase text-3xl cursor-pointer" />
+    ),
   },
 ];
 
 export const SocialLinks = [
   {
     id: 1,
-    iconSrc: <IoLogoGithub className="text-textBase text-3xl cursor-pointer" />,
+    iconSrc: <IoLogoGithub className="text-gray-300 text-3xl cursor-pointer" />,
     name: "GitHub",
-    link: "#",
+    link: "https://github.com/Sespeck",
   },
-  {
-    id: 1,
-    iconSrc: <IoLogoYoutube className="text-red-500 text-3xl cursor-pointer" />,
-    name: "YouTube",
-    link: "#",
-  },
+  // {
+  //   id: 1,
+  //   iconSrc: <IoLogoYoutube className="text-red-500 text-3xl cursor-pointer" />,
+  //   name: "YouTube",
+  //   link: "#",
+  // },
   {
     id: 1,
     iconSrc: (
-      <IoLogoTwitter className="text-blue-500 text-3xl cursor-pointer" />
+      <IoLogoWechat className="text-green-600 text-3xl cursor-pointer" />
     ),
-    name: "Twitter",
-    link: "#",
+    name: "Wechat",
+    link: "weixin://weixin.qq.com/r/kFEybsDBmUDvgNicB_POuns",
   },
   {
     id: 1,
     iconSrc: (
-      <IoLogoLinkedin className="text-blue-800 text-3xl cursor-pointer" />
+      <IoLogoLinkedin className="text-blue-600 text-3xl cursor-pointer" />
     ),
     name: "LinkedIn",
-    link: "#",
+    link: "https://www.linkedin.com/in/zhenyuwangsean/",
   },
   {
     id: 1,
     iconSrc: (
-      <IoLogoWhatsapp className="text-green-500 text-3xl cursor-pointer" />
+      <MdOutlineMailOutline className=" text-red-300 text-3xl cursor-pointer" />
     ),
-    name: "Whatsapp",
-    link: "#",
+    name: "Email",
+    link: "mailto:wang_zhenyu_sean@foxmail.com",
   },
 ];

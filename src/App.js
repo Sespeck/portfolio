@@ -6,9 +6,15 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { Experience, Projects, SocialLinks } from "./data";
-import { IoMenu } from "react-icons/io5";
+import {
+  IoMenu,
+  IoLogoPython,
+  IoLogoChrome,
+  IoLogoAndroid,
+} from "react-icons/io5";
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import { TbCertificate } from "react-icons/tb";
 
 function App() {
   const [isActive, setIsActive] = useState(false);
@@ -134,7 +140,7 @@ function App() {
             className="w-full grid grid-cols-1 md:grid-cols-2 gap-4 my-24"
             id="about"
           >
-            <div className="w-full h-420 flex items-center justify-center">
+            <div className="w-full h-420 flex  justify-center">
               <div className="w-275 h-340 relative bg-indigo-900 rounded-md">
                 <img
                   src={Sean}
@@ -144,18 +150,24 @@ function App() {
               </div>
             </div>
             <div className="w-full h-420 flex flex-col items-center justify-center ">
-              <p className="text-lg text-textBase text-center">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Sapiente dicta recusandae commodi praesentium officia, aliquam
-                cumque voluptatem dolor enim ducimus id maiores consequatur
-                dolorem! Architecto aperiam corrupti nostrum eum similique!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Veritatis saepe dolor illo. Tenetur labore impedit nihil natus
-                explicabo perspiciatis nisi autem aut numquam dolorum, voluptas
-                vero nobis assumenda commodi magni.
+              <p className="text-lg text-textBase text-start">
+                <IoLogoPython className=" inline font-medium animate-bounce text-yellow-200 mx-2" />
+                Java, C, C++, Python, JavaScript, Dart, Kotlin, R
+                <br />
+                <IoLogoChrome className=" inline font-medium animate-bounce text-red-200 mx-2" />
+                Tailwind CSS, Spring Boot, MERN stack, Node.js, Express,
+                MongoDB, MySQL
+                <br />
+                <IoLogoAndroid className=" inline font-medium animate-bounce text-green-200 mx-2" />
+                Android Studio, Git, Kotlin, Flutter Framework, Firebase
+                <br />
+                <TbCertificate className=" inline font-medium animate-bounce text-blue-200 mx-2" />
+                Udacity Java Web Developer Nanodegree (2021), DataCamp Data
+                Scientist with Python Career Track (2018), Chartered Financial
+                Analyst Level 1 (2019)
               </p>
 
-              <button class="w-full md:w-auto relative mt-6 inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-green-400 to-blue-600 group-hover:from-green-400 group-hover:to-blue-600 hover:text-white dark:text-white focus:ring-4 focus:ring-green-200 dark:focus:ring-green-800 hover:shadow-lg hover:shadow-teal-500/50 hover:dark:shadow-lg hover:dark:shadow-teal-800/80">
+              <button class="w-full md:w-auto relative mt-10 inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-green-400 to-blue-600 group-hover:from-green-400 group-hover:to-blue-600 hover:text-white dark:text-white focus:ring-4 focus:ring-green-200 dark:focus:ring-green-800 hover:shadow-lg hover:shadow-teal-500/50 hover:dark:shadow-lg hover:dark:shadow-teal-800/80">
                 <span class="w-full md:w-auto relative px-5 py-2.5 transition-all ease-in duration-75 bg-gray-300 dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
                   <a
                     href="/resume.pdf"
@@ -188,20 +200,20 @@ function App() {
                     iconStyle={{ background: "rgb(21, 24, 31)", color: "#888" }}
                     icon={n.iconsSrc}
                   >
-                    <h3 className="vertical-timeline-element-title">
+                    <h3 className="vertical-timeline-element-title, text-gray-200">
                       {n.title}
                     </h3>
-                    <h4 className="vertical-timeline-element-subtitle">
+                    <h4 className="vertical-timeline-element-subtitle ">
                       {n.location}
                     </h4>
-                    <p>{n.description}</p>
+                    <p className=" text-slate-300">{n.description}</p>
                   </VerticalTimelineElement>
                 ))}
             </VerticalTimeline>
           </section>
 
           <section
-            className="flex flex-wrap items-center justify-evenly my-24 gap-4"
+            className="flex flex-wrap items-start justify-center my-24 gap-4 "
             id="projects"
           >
             {Projects &&
@@ -220,14 +232,14 @@ function App() {
                     alt=""
                   />
 
-                  <div className="flex flex-1 items-center justify-between">
-                    <p className="text-lg text-textBase">
-                      Technologies
+                  <div className="flex flex-1 items-start justify-between">
+                    <p className="text-sm text-textBase">
+                      {n.info}
                       <span className="block text-sm text-gray-500">
                         {n.techs}
                       </span>
                     </p>
-                    <a href={n.link}>
+                    <a href={n.link} className="ml-1">
                       <motion.div whileTap={{ scale: 0.5 }}>
                         {n.iconSrc}
                       </motion.div>
@@ -239,10 +251,10 @@ function App() {
 
           <section
             id="contacts"
-            className="flex flex-col items-center justify-evenly w-full my-24"
+            className="flex flex-col items-center w-full my-24"
           >
             <p className="text-2xl text-gray-400 capitalize">Follow me on</p>
-            <div className="flex items-center justify-evenly w-full my-4 flex-wrap gap-4">
+            <div className="flex items-center justify-center w-full my-4 flex-wrap gap-4">
               {SocialLinks &&
                 SocialLinks.map((n) => (
                   <motion.a

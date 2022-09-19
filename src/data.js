@@ -1,105 +1,116 @@
 import {
-  IoCodeWorking,
   IoLogoGithub,
-  IoLogoYoutube,
-  IoLogoWechat,
+  IoLogoWhatsapp,
   IoLogoLinkedin,
+  IoSchool,
 } from "react-icons/io5";
 
-import { MdOutlineMailOutline } from "react-icons/md";
+import { MdOutlineMailOutline, MdOutlineWork } from "react-icons/md";
 import { FiExternalLink } from "react-icons/fi";
 
-import img1 from "./images/thumb-fooddeliveryapp-reactjs-dec.png";
-import img2 from "./images/thumb-fullstack-socialmedia-app-react-sanity.png";
-import img3 from "./images/thumb-google-map-clone-nextjs-feb22.png";
-import img4 from "./images/thumb-pinterest-clone-reactjs.png";
+import img1 from "./images/puddle-project.png";
+import img2 from "./images/welcome-to-java-island.png";
+import img3 from "./images/welcome-to-java-island.png";
+import img4 from "./images/KOF22.png";
 import img5 from "./images/welcome-to-java-island.png";
 import img6 from "./images/java-ood-workbook.png";
 
 export const Experience = [
   {
     id: 1,
-    date: "2016 - present",
-    iconsSrc: <IoCodeWorking />,
-    title: "Creative Director",
-    location: "Doha, Qatar",
-    description:
-      "Creative Direction, User Experience, Visual Design, Project Management, Team Leading",
+    date: "2022 - present",
+    iconsSrc: <IoSchool className=" animate-pulse text-teal-100" />,
+    title: "MSc in Computer Science",
+    location: "Northeastern University, Portland, ME, USA",
+    description: [
+      "MS in Computer Science",
+      <br />,
+      "Relevant Coursework: Database Management, Mobile App Development, Algorithms, Web Development",
+    ],
   },
   {
     id: 2,
-    date: "2014 - 2016",
-    iconsSrc: <IoCodeWorking />,
-    title: "Creative Director",
-    location: "Doha, Qatar",
-    description:
-      "Creative Direction, User Experience, Visual Design, Project Management, Team Leading",
+    date: "2019 - 2021",
+    iconsSrc: <MdOutlineWork className=" animate-pulse text-blue-200" />,
+    title: "Avaloq Software Engineer & Tableau Consultant",
+    location: "Synpulse Management Consulting, Singapore",
+    description: [
+      "Trading System Developer, Agile Development, OOD of Financial Products, Data Modelling in PL/SQL.",
+      <br />,
+      "Project Management and Test management.",
+      <br />,
+      "Expertise Trainer in Trading Desk Operation.",
+      <br />,
+      "Reporting Auomation, Tableau Business Intelligence Developer",
+    ],
   },
   {
     id: 3,
-    date: "2012 - 2014",
-    iconsSrc: <IoCodeWorking />,
-    title: "Creative Director",
-    location: "Doha, Qatar",
-    description:
-      "Creative Direction, User Experience, Visual Design, Project Management, Team Leading",
+    date: "2019 Jan - Apr",
+    iconsSrc: <MdOutlineWork className=" animate-pulse text-blue-200" />,
+    title: "Data Science Intern",
+    location: "Shopee, Singapore",
+    description: [
+      "Sales performance data scientist, reporting automation with Python script-running Power BI dashboards.",
+      <br />,
+      "Structured A/B tests reflecting online customer purchase behaviour impacted by rebate and marketing campaigns.",
+    ],
   },
   {
     id: 4,
-    date: "2011 - 2012",
-    iconsSrc: <IoCodeWorking />,
-    title: "Creative Director",
-    location: "Doha, Qatar",
-    description:
-      "Creative Direction, User Experience, Visual Design, Project Management, Team Leading",
-  },
-  {
-    id: 5,
-    date: "2010 - 2011",
-    iconsSrc: <IoCodeWorking />,
-    title: "Creative Director",
-    location: "Doha, Qatar",
-    description:
-      "Creative Direction, User Experience, Visual Design, Project Management, Team Leading",
+    date: "2015 - 2019",
+    iconsSrc: <IoSchool className=" animate-pulse text-teal-100" />,
+    title: " BSc in Maritime Studies & Commodities Trading",
+    location: "Nanyang Technological University, Singapore",
+    description: [
+      "NTU Science and Engineering Undergraduate Full Scholarship",
+      <br />,
+      "Relevant Coursework: Data Structure, Python Computational Thinking, Digital Logic, Probability and Statistics",
+    ],
   },
 ];
 
 export const Projects = [
   {
     id: 1,
-    name: "Food Delivery UI Mockup",
+    name: "Puddle",
+    info: "proximity-based community group",
     imageSrc: img1,
-    techs: "React Js, Redux, Material UI",
-    link: "#",
+    techs: "Android, Firebase, Google Maps, Material UI",
+    link: "https://github.com/Sespeck/NUMAD22Su_Team24_Puddle",
     iconSrc: <IoLogoGithub className="text-textBase text-3xl cursor-pointer" />,
   },
-  {
-    id: 2,
-    name: "Full Stack Social Media App ",
-    imageSrc: img2,
-    techs: "React Js, Sanity, Tailwind CSS",
-    link: "#",
-    iconSrc: <IoLogoGithub className="text-textBase text-3xl cursor-pointer" />,
-  },
-  {
-    id: 3,
-    name: "Travel Advisor",
-    imageSrc: img3,
-    techs: "React Js, Chakra UI, Google API",
-    link: "#",
-    iconSrc: <IoLogoGithub className="text-textBase text-3xl cursor-pointer" />,
-  },
+  // {
+  //   id: 2,
+  //   name: "Local Commnunity Social App",
+  //   info: "info",
+  //   imageSrc: img2,
+  //   techs: "React Js, Sanity, Tailwind CSS",
+  //   link: "#",
+  //   iconSrc: <IoLogoGithub className="text-textBase text-3xl cursor-pointer" />,
+  // },
+  // {
+  //   id: 3,
+  //   name: "Travel Advisor",
+  //   info: "info",
+  //   imageSrc: img3,
+  //   techs: "React Js, Chakra UI, Google API",
+  //   link: "#",
+  //   iconSrc: <IoLogoGithub className="text-textBase text-3xl cursor-pointer" />,
+  // },
   {
     id: 4,
-    name: "Pintrest UI Clone 2.0 ",
+    name: "King of Figher 2022",
+    info: "Java OOD course creative lab",
     imageSrc: img4,
-    techs: "React Js,  Material UI",
-    link: "#",
+    techs: "Java, JavaFX",
+    link: "https://github.com/Sespeck/King-Of-Fighters",
     iconSrc: <IoLogoGithub className="text-textBase text-3xl cursor-pointer" />,
   },
   {
     id: 5,
     name: "Java Basics Blog",
+    info: "Structured blog posts on Java basics learning points",
     imageSrc: img5,
     techs: "Java, Blogging, HTML",
     link: "https://aaaa329m.wixsite.com/javaisland",
@@ -110,6 +121,7 @@ export const Projects = [
   {
     id: 6,
     name: "Java OOD Workbook",
+    info: "Self-crafted lab assignments for Java OOD learning",
     imageSrc: img6,
     techs: "Java, Blogging, HTML",
     link: "https://aaaa329m.wixsite.com/workbook",
@@ -126,19 +138,13 @@ export const SocialLinks = [
     name: "GitHub",
     link: "https://github.com/Sespeck",
   },
-  // {
-  //   id: 1,
-  //   iconSrc: <IoLogoYoutube className="text-red-500 text-3xl cursor-pointer" />,
-  //   name: "YouTube",
-  //   link: "#",
-  // },
   {
     id: 1,
     iconSrc: (
-      <IoLogoWechat className="text-green-600 text-3xl cursor-pointer" />
+      <IoLogoWhatsapp className="text-green-600 text-3xl cursor-pointer" />
     ),
-    name: "Wechat",
-    link: "weixin://weixin.qq.com/r/kFEybsDBmUDvgNicB_POuns",
+    name: "WhatsApp",
+    link: "https://wa.me/6594489584",
   },
   {
     id: 1,

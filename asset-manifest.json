@@ -1,22 +1,21 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.6040334c.css",
-    "main.js": "/portfolio/static/js/main.a99e7f36.js",
+    "main.css": "/portfolio/static/css/main.b3a02367.css",
+    "main.js": "/portfolio/static/js/main.803f2740.js",
     "static/js/232.b6643301.chunk.js": "/portfolio/static/js/232.b6643301.chunk.js",
     "static/media/welcome-to-java-island.png": "/portfolio/static/media/welcome-to-java-island.74f2841aeb0c3fe40956.png",
     "static/media/java-ood-workbook.png": "/portfolio/static/media/java-ood-workbook.8961250a22ef128a66df.png",
-    "static/media/thumb-fullstack-socialmedia-app-react-sanity.png": "/portfolio/static/media/thumb-fullstack-socialmedia-app-react-sanity.44fcc444cec6e5975eda.png",
-    "static/media/thumb-pinterest-clone-reactjs.png": "/portfolio/static/media/thumb-pinterest-clone-reactjs.28b7219fa6592c8cb72e.png",
-    "static/media/thumb-google-map-clone-nextjs-feb22.png": "/portfolio/static/media/thumb-google-map-clone-nextjs-feb22.200845be6c176fdf46e1.png",
-    "static/media/thumb-fooddeliveryapp-reactjs-dec.png": "/portfolio/static/media/thumb-fooddeliveryapp-reactjs-dec.fd65990a923e0e9a8e30.png",
+    "static/media/KOF22.png": "/portfolio/static/media/KOF22.131612fdd93f8aae2627.png",
+    "static/media/puddle-project.png": "/portfolio/static/media/puddle-project.993dff22ffadd9bf7f1e.png",
     "static/media/sean.jpg": "/portfolio/static/media/sean.001c22b046be9d54dd59.jpg",
+    "static/media/resume.pdf": "/portfolio/static/media/resume.31a253e98c5560e240b9.pdf",
     "index.html": "/portfolio/index.html",
-    "main.6040334c.css.map": "/portfolio/static/css/main.6040334c.css.map",
-    "main.a99e7f36.js.map": "/portfolio/static/js/main.a99e7f36.js.map",
+    "main.b3a02367.css.map": "/portfolio/static/css/main.b3a02367.css.map",
+    "main.803f2740.js.map": "/portfolio/static/js/main.803f2740.js.map",
     "232.b6643301.chunk.js.map": "/portfolio/static/js/232.b6643301.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6040334c.css",
-    "static/js/main.a99e7f36.js"
+    "static/css/main.b3a02367.css",
+    "static/js/main.803f2740.js"
   ]
 }

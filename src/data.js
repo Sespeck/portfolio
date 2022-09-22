@@ -9,7 +9,7 @@ import { MdOutlineMailOutline, MdOutlineWork } from "react-icons/md";
 import { FiExternalLink } from "react-icons/fi";
 
 import img1 from "./images/puddle-project.png";
-import img2 from "./images/welcome-to-java-island.png";
+import img2 from "./images/harbor.png";
 import img3 from "./images/welcome-to-java-island.png";
 import img4 from "./images/KOF22.png";
 import img5 from "./images/welcome-to-java-island.png";
@@ -80,15 +80,15 @@ export const Projects = [
     link: "https://github.com/Sespeck/NUMAD22Su_Team24_Puddle",
     iconSrc: <IoLogoGithub className="text-textBase text-3xl cursor-pointer" />,
   },
-  // {
-  //   id: 2,
-  //   name: "Local Commnunity Social App",
-  //   info: "info",
-  //   imageSrc: img2,
-  //   techs: "React Js, Sanity, Tailwind CSS",
-  //   link: "#",
-  //   iconSrc: <IoLogoGithub className="text-textBase text-3xl cursor-pointer" />,
-  // },
+  {
+    id: 2,
+    name: "Harbor",
+    info: "Full stack CRUD web app with React and Spring Boot",
+    imageSrc: img2,
+    techs: "Next.JS, Tailwind CSS, Redux, Spring",
+    link: "https://github.com/Sespeck/harbor-frontend",
+    iconSrc: <IoLogoGithub className="text-textBase text-3xl cursor-pointer" />,
+  },
   // {
   //   id: 3,
   //   name: "Travel Advisor",

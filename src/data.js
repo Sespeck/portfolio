@@ -35,6 +35,8 @@ export const Experience = [
     title: "Avaloq Software Engineer & Tableau Consultant",
     location: "Synpulse Management Consulting, Singapore",
     description: [
+      "Managed business analysis for investment banks in Asia-Pacific region, including HSBC and UBS; acted as subject matter expert and consultant on Tableau business intelligence, Avaloq financial static data, security trading and reporting.",
+      <br />,
       "Trading System Developer, Agile Development, OOD of Financial Products, Data Modelling in PL/SQL.",
       <br />,
       "Project Management and Test management.",
@@ -51,9 +53,9 @@ export const Experience = [
     title: "Data Science Intern",
     location: "Shopee, Singapore",
     description: [
-      "Sales performance data scientist, reporting automation with Python script-running Power BI dashboards.",
+      "Led sales business intelligence project; produced insights into buyer behaviour, promotion, pricing; proposed a complex Python-scripted Power BI deployment project and held BI development training.",
       <br />,
-      "Structured A/B tests reflecting online customer purchase behaviour impacted by rebate and marketing campaigns.",
+      "Designed A/B test plans to study customer purchasing pattern impacted by rebate and marketing campaigns.",
     ],
   },
   {

@@ -1,21 +1,21 @@
-import Spline from "@splinetool/react-spline";
-import Sean from "./images/sean.jpg";
-import cv from "./resume.pdf";
+import Spline from '@splinetool/react-spline';
+import Sean from './images/sean.jpg';
+import cv from './resume.pdf';
 import {
   VerticalTimeline,
   VerticalTimelineElement,
-} from "react-vertical-timeline-component";
-import "react-vertical-timeline-component/style.min.css";
-import { Experience, Projects, SocialLinks } from "./data";
+} from 'react-vertical-timeline-component';
+import 'react-vertical-timeline-component/style.min.css';
+import { Experience, Projects, SocialLinks } from './data';
 import {
   IoMenu,
   IoLogoPython,
   IoLogoChrome,
   IoLogoAndroid,
-} from "react-icons/io5";
-import { useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
-import { TbCertificate } from "react-icons/tb";
+} from 'react-icons/io5';
+import { useState } from 'react';
+import { AnimatePresence, motion } from 'framer-motion';
+import { TbCertificate } from 'react-icons/tb';
 
 function App() {
   const [isActive, setIsActive] = useState(false);
@@ -72,7 +72,7 @@ function App() {
                 initial={{ opacity: 0, scale: 0.5 }}
                 animate={{ opacity: 1, scale: 1.1 }}
                 exit={{ opacity: 0, scale: 0.5 }}
-                transition={{ delay: "0.1s", type: "spring" }}
+                transition={{ delay: '0.1s', type: 'spring' }}
                 className="p-4 w-275 bg-navBar rounded-lg fixed top-24 right-16 flex flex-col items-center justify-evenly gap-6"
               >
                 <a
@@ -191,14 +191,14 @@ function App() {
                     key={n.id}
                     className="vertical-timeline-element--work"
                     contentStyle={{
-                      background: "rgb(21, 24, 31)",
-                      color: "#888",
+                      background: 'rgb(21, 24, 31)',
+                      color: '#888',
                     }}
                     contentArrowStyle={{
-                      borderRight: "7px solid  rgb(21, 24, 31)",
+                      borderRight: '7px solid  rgb(21, 24, 31)',
                     }}
                     date={n.date}
-                    iconStyle={{ background: "rgb(21, 24, 31)", color: "#888" }}
+                    iconStyle={{ background: 'rgb(21, 24, 31)', color: '#888' }}
                     icon={n.iconsSrc}
                   >
                     <h3 className="vertical-timeline-element-title, text-gray-200">
@@ -220,7 +220,7 @@ function App() {
             {Projects &&
               Projects.map((n, i) => (
                 <motion.div
-                  key={n.id}
+                  key={i}
                   className="border border-zinc-800 rounded-md p-2 min-w-[275px] md:max-w-[275px] hover:border-zinc-600 duration-100 ease-in-out"
                 >
                   <p className="text-lg text-gray-300 font-medium">

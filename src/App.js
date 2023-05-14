@@ -1,18 +1,15 @@
 import Spline from '@splinetool/react-spline';
 import Sean from './images/sean.jpg';
-import cv from './resume.pdf';
+
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import { Experience, Projects, SocialLinks } from './data';
-import {
-  IoMenu,
-  IoLogoPython,
-  IoLogoChrome,
-  IoLogoAndroid,
-} from 'react-icons/io5';
+import { SiKubernetes } from 'react-icons/si';
+import { DiReact } from 'react-icons/di';
+import { IoMenu, IoLogoPython } from 'react-icons/io5';
 import { useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { TbCertificate } from 'react-icons/tb';
@@ -52,11 +49,10 @@ function App() {
                 Contact
               </a>
               <a
-                href={cv}
-                download="sean_wang_zhenyu_resume"
+                href="https://www.linkedin.com/in/zhenyuwangsean/"
                 className="ml-auto text-base text-textBase font-medium hover:text-slate-100 cursor-pointer border border-textBase px-2 py-1 rounded-xl hover:border-gray-100 duration-100 ease-in"
               >
-                Resume
+                Contact Me
               </a>
             </div>
 
@@ -104,7 +100,7 @@ function App() {
                   Contact
                 </a>
                 <a
-                  href={cv}
+                  href="https://www.linkedin.com/in/zhenyuwangsean/"
                   download="sean_wang_zhenyu_resume"
                   className="text-base text-textBase font-medium hover:text-slate-100 cursor-pointer border border-textBase px-2 py-1 rounded-xl hover:border-gray-100 duration-100 ease-in"
                   onClick={() => setIsActive(false)}
@@ -116,11 +112,11 @@ function App() {
           </div>
         </nav>
 
-        <div className="w-screen min-h-screen max-h-screen relative" id="home">
-          <Spline
-            className="min-h-500 max-h-screen relative"
-            scene="https://prod.spline.design/og3w82p0SiX0Ln9H/scene.splinecode"
-          />
+        <div
+          className="w-screen h-[80vh] relative shadow-xl rounded-3xl overflow-hidden"
+          id="spline-container"
+        >
+          <Spline scene="https://prod.spline.design/1f60RjRBqKrEjezu/scene.splinecode" />
           <div className="absolute bottom-5 w-full flex justify-center items-center mx-2">
             <div className=" hover:animate-pulse shadow-md p-4 flex items-center justify-center bg-zinc-900 rounded-3xl mx-2 text-gray-500 hover:text-gray-300">
               <p className="text-gray-500 hover:text-gray-200 ">
@@ -153,14 +149,14 @@ function App() {
             <div className="w-full h-420 flex flex-col items-center justify-center ">
               <p className="text-lg text-textBase text-start">
                 <IoLogoPython className=" inline font-medium animate-bounce text-yellow-200 mx-2" />
-                Java, C, C++, Python, JavaScript, Dart, Kotlin, R
+                Golang, C++, Python, SQL, Java, C, JavaScript, Dart, Kotlin, R
                 <br />
-                <IoLogoChrome className=" inline font-medium animate-bounce text-red-200 mx-2" />
-                Tailwind CSS, Spring Boot, MERN stack, Node.js, Express,
-                MongoDB, MySQL
+                <DiReact className=" inline font-medium animate-bounce text-red-200 mx-2" />
+                React, Tailwind CSS, Node.js, Express, MongoDB, Android,
+                Flutter, Firebase
                 <br />
-                <IoLogoAndroid className=" inline font-medium animate-bounce text-green-200 mx-2" />
-                Android Studio, Git, Kotlin, Flutter Framework, Firebase
+                <SiKubernetes className=" inline font-medium animate-bounce text-green-200 mx-2" />
+                Kubernetes, Docker, Linux, Spring Boot
                 <br />
                 <TbCertificate className=" inline font-medium animate-bounce text-blue-200 mx-2" />
                 Udacity Java Web Developer Nanodegree (2021), DataCamp Data
@@ -171,12 +167,11 @@ function App() {
               <button class="w-full md:w-auto relative mt-10 inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-green-400 to-blue-600 group-hover:from-green-400 group-hover:to-blue-600 hover:text-white dark:text-white focus:ring-4 focus:ring-green-200 dark:focus:ring-green-800 hover:shadow-lg hover:shadow-teal-500/50 hover:dark:shadow-lg hover:dark:shadow-teal-800/80">
                 <span class="w-full md:w-auto relative px-5 py-2.5 transition-all ease-in duration-75 bg-gray-300 dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
                   <a
-                    href={cv}
-                    download="sean_wang_zhenyu_resume"
+                    href="https://www.linkedin.com/in/zhenyuwangsean/"
                     className="text-base text-textBase font-medium hover:text-slate-100 cursor-pointer  px-2 py-1 rounded-xl hover:border-gray-100 duration-100 ease-in"
                     onClick={() => setIsActive(false)}
                   >
-                    Resume Download
+                    Contact Me
                   </a>
                 </span>
               </button>

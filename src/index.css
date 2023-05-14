@@ -14,7 +14,10 @@ code {
     monospace;
 }
 
-body::-webkit-scrollbar 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 html::-webkit-scrollbar{
   display: none;
 }

@@ -113,7 +113,10 @@ function App() {
         </nav>
 
         <div className="w-screen relative h-screen " id="spline-container">
-          <Spline scene="https://prod.spline.design/1f60RjRBqKrEjezu/scene.splinecode" />
+          <Spline
+            className="min-h-500 max-h-screen relative"
+            scene="https://prod.spline.design/1f60RjRBqKrEjezu/scene.splinecode"
+          />
           <div className="absolute bottom-5 w-full flex justify-center items-center mx-2">
             <div className=" hover:animate-pulse shadow-md p-4 flex items-center justify-center bg-zinc-900 rounded-3xl mx-2 text-gray-500 hover:text-gray-300">
               <p className="text-gray-500 hover:text-gray-200 ">

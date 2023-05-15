@@ -18,7 +18,7 @@ function App() {
   const [isActive, setIsActive] = useState(false);
   return (
     <AnimatePresence initial={false}>
-      <div className="flex w-screen min-h-screen flex-col items-center justify-center relative bg-primary pb-20">
+      <div className="flex w-screen flex-col items-center justify-center relative bg-primary">
         <nav className="w-full px-6 z-50  fixed inset-x-0 top-2 flex justify-center items-center ">
           <div className=" w-full md:w-880 bg-navBar p-4 rounded-2xl flex items-center">
             <p className="text-lg text-slate-200 font-medium"> Sean Wang </p>
@@ -105,18 +105,15 @@ function App() {
                   className="text-base text-textBase font-medium hover:text-slate-100 cursor-pointer border border-textBase px-2 py-1 rounded-xl hover:border-gray-100 duration-100 ease-in"
                   onClick={() => setIsActive(false)}
                 >
-                  Resume
+                  LinkedIn
                 </a>
               </motion.div>
             )}
           </div>
         </nav>
 
-        <div className="w-screen relative h-screen " id="spline-container">
-          <Spline
-            className="min-h-500 max-h-screen relative"
-            scene="https://prod.spline.design/1f60RjRBqKrEjezu/scene.splinecode"
-          />
+        <div className="w-screen h-screen relative" id="spline-container">
+          <Spline scene="https://prod.spline.design/1f60RjRBqKrEjezu/scene.splinecode" />
           <div className="absolute bottom-5 w-full flex justify-center items-center mx-2">
             <div className=" hover:animate-pulse shadow-md p-4 flex items-center justify-center bg-zinc-900 rounded-3xl mx-2 text-gray-500 hover:text-gray-300">
               <p className="text-gray-500 hover:text-gray-200 ">
@@ -132,7 +129,7 @@ function App() {
           </div>
         </div>
 
-        <main className="w-[80%] mt-4">
+        <main className="w-[80%]">
           <section
             className="w-full grid grid-cols-1 md:grid-cols-2 gap-4 my-24"
             id="about"
